@@ -8,7 +8,7 @@ describe("Ghibliator", () => {
     // setup
     const expected = 33;
     const delta = 1;
-    const stubText = `[{ "age": 33 }, { "age": 33 }]`;
+    const stubText = `[{ "age": 32 }, { "age": 33 }, { "age": 34 }]`;
     const stub = sinon.stub(fs, "readFileSync").returns(stubText);
     // exercise
     const actual = new Ghibliator().getAverageAge();
