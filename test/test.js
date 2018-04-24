@@ -20,18 +20,6 @@ describe("Ghibliator", () => {
     stub.restore();
   });
 
-  // it("should return an error message if the file doesn't exist", () => {
-  //   // setup
-  //   const expectedError = new Error("oops");
-  //   const readFileSync = sinon.stub(fs, "readFileSync");
-  //   readFileSync.throws(expectedError);
-
-  //   const callback = sinon.spy();
-  //   new Ghibliator().getAverageAge(callback);
-  //   readFileSync.restore();
-  //   sinon.assert.calledWith(callback, expectedError);
-  // });
-
   it("should return appearances", () => {
     // setup
     const expected = 2;
