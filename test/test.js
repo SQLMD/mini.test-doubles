@@ -23,6 +23,8 @@ describe("Ghibliator", () => {
   it("should return appearances", () => {
     // setup
     const expected = 2;
+
+    //Create stub with fake film data
     const data = `[{"name": "Baron Humbert von Gikkingen", "films": ["https:a", "https://b"]}]`;
 
     const stub = sinon.stub(fs, "readFileSync").returns(data);
